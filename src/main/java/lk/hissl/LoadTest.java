@@ -20,7 +20,7 @@ public class LoadTest {
         List<String> urlList = new ArrayList<>();
         for (int i = 0; i < jsonArray.length(); i++) {
             String u = jsonArray.get(i).toString();
-            if (u.contains("/api/") && !u.contains("/api/apps") && u.contains("lankanets")) {
+            if (u.contains("/api/") && !u.contains("/api/apps") && u.contains(Statics.targetDomain)) {
                 urlList.add(u);
             }
         }
